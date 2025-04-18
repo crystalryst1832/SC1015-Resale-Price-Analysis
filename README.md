@@ -1,4 +1,4 @@
-# SC1015-Resale-Price-Analysis
+# SC1015: Resale Price Analysis
 Our team's objective is to analyse the factors that affect resale prices of HDB in Singapore, from 2017 to 2024's first month. For detailed walkthrough, please view code in order from:
 1. Data Cleaning
 2. Exploratory Data Analysis (EDA) which are further split into:
