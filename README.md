@@ -12,8 +12,11 @@ Our team's objective is to analyse the factors that affect resale prices of HDB 
 4. Machine Learning which contains:
    
    A. Regression.  
-   B. Classification.  
-   
+   B. Classification.
+
+## Practical Motivation
+In Singapore, the resale market under the Housing and Development Board (HDB) plays a pivotal role in housing the nation. However, there exists a pressing need to leverage advanced analytical techniques to unravel the underlying dynamics necessary to make informed decisions. In an article on [Straits Times, 2024](https://www.straitstimes.com/singapore/more-than-half-of-singaporeans-may-delay-plans-to-buy-home-due-to-inflation-fears-study), house-buying sentiment is cautious. A significant number of Singaporeans are feeling uncertain about making big financial decisions—like buying a home—because they are worried about rising prices in other words, inflation. Demand may temporarily dip too. If many potential buyers delay their home purchases, the short-term housing demand might decrease, which could slow down resale volume or price growth—especially in the private market or higher-end HDB flats.
+
 ## Problem Definition
 Are the claims according to public perception about HDB really true?
 - Larger floor areas tend to fetch higher resale prices.  
@@ -80,49 +83,66 @@ Are the claims according to public perception about HDB really true?
 # Insights
 ### 1️⃣ "Larger floor areas are the most demanded" -- False
 <p align= 'center'>
-   <img src="FloorAreaVsResalePrice.jpg" width='400'>
+   <img src="Pictures/FloorAreaVsResalePrice.jpg" width='400'>
 
    It suggests high preference for larger spaces =/ highest price. The volume of HDB is demand-driven, rather than value-per-unit-size. Even though larger flats are rare, they command higher average prices -- possibly due to exclusive flat types. 
 </p>
 
 ###  2️⃣ "Older flats (40+ years old) are assumed to be less desirable and cheaper." -- False  
 <p align= 'center'>
-   <img src="RemainingLeaseVersusResalePrice.jpg" width='400'>
+   <img src="Pictures/RemainingLeaseVersusResalePrice.jpg" width='400'>
 
    The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1. Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices. There are other more domineering factors in play.
 </p>
 
 ### 3️⃣ "Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices." -- True
 <p align= 'center'>
-   <img src="FlatModelVsPrice.jpg" width='400'>
+   <img src="Pictures/FlatModelVsPrice.jpg" width='400'>
 </p>
 
 ### 4️⃣ "Larger flat types (5-room) are expected to have higher prices, because they offer more space." -- True but Demand is not the highest
 <p align= 'center'>
-   <img src="RoomVsDemand.jpg" width='400'> 
+   <img src="Pictures/RoomVsDemand.jpg" width='400'> 
    
    This chart compares HDB resale prices and transaction counts across flat types, showing both price distribution (boxplots) and volume (bar heights). The picture shows 4-room flats dominate in demand popularity.
 </p>
 
 ### 5️⃣ "Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors." -- Not Always
 <p align= 'center'>
-   <img src="StoreyvsPrice.jpg" width='400'>
+   <img src="Pictures/StoreyvsPrice.jpg" width='400'>
    
    There are constant outliers for the lower storey ranges, and these outlieres still fetch high resale prices.
 </p>
 
 ### 6️⃣ "The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility." -- Not Always
 <p align= 'center'>
-   <img src="DistanceMRTvsPrice.jpg" width='400'>
+   <img src="Pictures/DistanceMRTvsPrice.jpg" width='400'>
    
    The picture above shows resale prices relating to their distances to MRT stations, with blue dots representing listings, highlighting spatial proximity and pricing. Here, a house of 190 metres away gives a lower price of 630 000 than a house of 700 metres away which is valued at 750 000, demonstrating not all houses are more expensive when they are nearer to the MRT, contradicting popular belief.
 </p>
 
 ## Insights about Machine Learning:
 ### 1️⃣ K Nearest Neighbour out-performs Multi-Variate Linear Regression, and will be better at predicting resale prices.
+MultiVariate Regression  
+<p align= 'center'>
+   <img src="Pictures/Multi-VariateRegression" width='400'>
 
+   KNN
+   <img src="Pictures/KNN" width='400'>
+
+   SVR
+   <img src="Pictures/SVR" width='400'>
+
+</p>
 
 ### 2️⃣ Xg Boost performs similarly to CatBoost, in terms of classification accuracy, and will be better at predicting resale prices.
+<p align= 'center'>
+   CatBoost
+   <img src="Pictures/Catboost" width='400'>
+
+   CatBoost and XG Boost
+   <img src="Pictures/XGboostandcatboost" width='400'>
+</p>
 
 # What is something new that we learnt?
 - The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
@@ -137,8 +157,10 @@ Are the claims according to public perception about HDB really true?
 # Last Words
 While higher floor above a certain range does lead to higher pricings, having a flat on a lower floor does not mean the HDB flat will be undervalued.  
 Lease decay does not play that strong as a factor as the public perceives; remaining lease of the flat has a weak predictive power for resale prices.  
-Our models prove that pricing is affected by multiple factors, and not solely on one of them.  
-We conclude that KNN for Regression and CatBoost for Classification are more accurate models in predicting the resale prices.  
+Our models prove that pricing is affected by multiple factors, and not solely on one of them.
+Based on our findings, K-Nearest Neighbors (KNN) for regression yields the most accurate predictions for resale prices. For classification, both CatBoost and XGBoost models perform with comparable accuracy.
+
+We hope that these insights can contribute to a more data-driven understanding of the HDB resale market and help buyers and sellers make more informed decisions. By highlighting the multi-factor nature of pricing, we aim to encourage a more nuanced conversation around property valuation. Ultimately, we believe our findings can support fairer pricing expectations and reduce misconceptions in the public discourse.
 
 # Contributors
 Both - Data Cleaning, Classification.  
