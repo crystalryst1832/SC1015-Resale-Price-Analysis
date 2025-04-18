@@ -5,7 +5,7 @@ Our team's objective is to analyse the factors that affect resale prices of HDB 
    
    A. Numerical Variables.       
    B. Categorical Variables.  
-   C. CLustering.  
+   C. Clustering.  
    D. Geolocation.  
    E. Variable: distance_to_mrt_m.
    
