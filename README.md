@@ -107,9 +107,10 @@ There are other more domineering factors in play.
 </p>
 
 ### Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
-atach image
-
-
+<p align= 'center'>
+   <img src="RoomVsDemand.jpg" width='400'>
+This chart compares HDB resale prices and transaction counts across flat types, showing both price distribution (boxplots) and volume (bar heights). The picture shows 4-room flats dominate in demand popularity.
+</p>
 
 ### Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
 <p align= 'center'>
