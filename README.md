@@ -1,5 +1,5 @@
 # SC1015: Resale Price Analysis
-Our team's objective is to analyse the factors that affect resale prices of HDB in Singapore, from 2017 to 2024's first month. For detailed walkthrough, please view code in order from:
+Our team's objective is to analyse the factors that affect resale prices of HDB flats in Singapore, from 2017 to 2024's first month. For detailed walkthrough, please view code in order from:
 1. Data Cleaning
 2. Exploratory Data Analysis (EDA) which are further split into:
    
@@ -63,12 +63,6 @@ Are the claims according to public perception about HDB really true?
 📌 Column: year
 [2017 2018 2019 2020 2021 2022 2023 2024]
 
-
-# Contributors
-Both - Data Cleaning, Classification.  
-@ crystalryst, Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
-@ junxiang, Chua Jun Xiang - EDA Categoricals, Clustering, Canva Slides
-
 # Algorithms / Libraries / Tools
 - Pandas 
 - Seaborn
@@ -82,14 +76,13 @@ Both - Data Cleaning, Classification.
 - Adaptive Binning
 - Cat Boost Classifier
 - eXtreme Gradient Boosting (XG Boost)
-- Grid Search Cross-Validation (GridSearch)
 
 # Insights
-### 1️⃣ "Larger floor areas are the most demanded" -- Not Always
+### 1️⃣ "Larger floor areas are the most demanded" -- False
 <p align= 'center'>
    <img src="FloorAreaVsResalePrice.jpg" width='400'>
 
-   It suggests high supply =/ highest price. The volume of HDB is demand-driven, rather than value-per-unit-size. Even though larger flats are rare, they command higher average prices -- possibly due to exclusive flat types. 
+   It suggests high preference for larger spaces =/ highest price. The volume of HDB is demand-driven, rather than value-per-unit-size. Even though larger flats are rare, they command higher average prices -- possibly due to exclusive flat types. 
 </p>
 
 ###  2️⃣ "Older flats (40+ years old) are assumed to be less desirable and cheaper." -- False  
@@ -99,38 +92,55 @@ Both - Data Cleaning, Classification.
    The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1. Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices. There are other more domineering factors in play.
 </p>
 
-### 3️⃣ Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices. -- True
+### 3️⃣ "Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices." -- True
 <p align= 'center'>
    <img src="FlatModelVsPrice.jpg" width='400'>
 </p>
 
-### 4️⃣ Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
+### 4️⃣ "Larger flat types (5-room) are expected to have higher prices, because they offer more space." -- True but Demand is not the highest
 <p align= 'center'>
    <img src="RoomVsDemand.jpg" width='400'> 
    
    This chart compares HDB resale prices and transaction counts across flat types, showing both price distribution (boxplots) and volume (bar heights). The picture shows 4-room flats dominate in demand popularity.
 </p>
 
-### 5️⃣ Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
+### 5️⃣ "Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors." -- Not Always
 <p align= 'center'>
    <img src="StoreyvsPrice.jpg" width='400'>
    
    There are constant outliers for the lower storey ranges, and these outlieres still fetch high resale prices.
 </p>
 
-### 6️⃣ The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility. -- Not Always
+### 6️⃣ "The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility." -- Not Always
 <p align= 'center'>
    <img src="DistanceMRTvsPrice.jpg" width='400'>
    
    The picture above shows resale prices relating to their distances to MRT stations, with blue dots representing listings, highlighting spatial proximity and pricing. Here, a house of 190 metres away gives a lower price of 630 000 than a house of 700 metres away which is valued at 750 000, demonstrating not all houses are more expensive when they are nearer to the MRT, contradicting popular belief.
 </p>
 
+## Insights about Machine Learning:
+### 1️⃣ K Nearest Neighbour out-performs Multi-Variate Linear Regression, and will be better at predicting resale prices.
+
+
+### 2️⃣ Xg Boost performs similarly to CatBoost, in terms of classification accuracy, and will be better at predicting resale prices.
+
 # What is something new that we learnt?
 - The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
-- Geolocation
+- Geolocation, Geopandas
 - API Usage, to fetch coordinates of full addresses of a large database containing thousands of addresses
 - Regression
 - Cat Boost Classifier
+- Function formatting
+- Annotation Clustering
+- One Hot Encoding
 
 # Last Words
-We hope in the future we can look into Machine Learning models that combine both categorical and numerical factors and discover unforeseen trends when doing so. 
+While higher floor above a certain range does lead to higher pricings, having a flat on a lower floor does not mean the HDB flat will be undervalued.  
+Lease decay does not play that strong as a factor as the public perceives; remaining lease of the flat has a weak predictive power for resale prices.  
+Our models prove that pricing is affected by multiple factors, and not solely on one of them.  
+We conclude that KNN for Regression and CatBoost for Classification are more accurate models in predicting the resale prices.  
+
+# Contributors
+Both - Data Cleaning, Classification.  
+@ Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
+@ Chua Jun Xiang - EDA Categoricals, Clustering, Canva Slides
