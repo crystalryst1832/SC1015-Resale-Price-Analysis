@@ -65,7 +65,7 @@ Are the claims according to public perception about HDB really true?
 
 
 # Contributors
-Both - Data Cleaning, Classification. 
+Both - Data Cleaning, Classification.  
 @ crystalryst, Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
 @ junxiang, Chua Jun Xiang - EDA Categoricals, CLustering, Canva Slides
 
