@@ -85,11 +85,13 @@ Are the claims according to public perception about HDB really true?
 - Grid Search Cross-Validation (GridSearch)
 
 # Insights
-### Larger floor areas are the most demanded -- Not Always
-![Logo](assets/logo.png)
+### "Larger floor areas are the most demanded" -- Not Always
+![Logo](FloorAreaVsResalePrice.jpg)
+It suggests high supply =/ highest price. 
+The volume of HDB is demand-driven, rather than value-per-unit-size. 
+Even though larger flats are rare, they command hgiher average prices -- possibly due to exclusive flat types. 
 
-
-- Older flats (40+ years old) are assumed to be less desirable and cheaper.  
+### Older flats (40+ years old) are assumed to be less desirable and cheaper.  
 - Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices.  
 - Larger flat types (5-room) are expected to have higher prices, because they offer more space.  
 - Flats based on certain streets might be assumed to be higher prices, due to high demand and accessibility.  
