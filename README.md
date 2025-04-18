@@ -102,13 +102,14 @@ There are other more domineering factors in play.
 
 ### Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices. -- True
 <p align= 'center'>
-   <img src="FlatModelsVsPrice.jpg" width='400'>
+   <img src="FlatModelVsPrice.jpg" width='400'>
 </p>
 ### Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
 atach image
+
 ### Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
 <p align= 'center'>
-   <img src="StoreyVsPrice.jpg" width='400'>
+   <img src="StoreyvsPrice.jpg" width='400'>
 </p>
 There are constant outliers for the lower storey ranges, and they fetch high resale prices.
 
@@ -116,9 +117,14 @@ There are constant outliers for the lower storey ranges, and they fetch high res
 <p align= 'center'>
    <img src="DistanceMRTvsPrice.jpg" width='400'>
 </p>
+The picture above shows resale prices relating to their distances to MRT stations, with blue dots representing listings, highlighting spatial proximity and pricing. Here, a house of 190 metres away gives a lower price of 630 000 than a house of 700 metres away which is valued at 750 000, demonstrating not all houses are more expensive when they are nearer to the MRT, contradicting popular belief.
 
 # What is something new that we learn?
-
+- The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
+- Geolocation
+- API Usage, to fetch coordinates of full addresses of a large database containing thousands of addresses
+- Regression
+- Cat Boost Classifier
 
 # Last Words
 We hope in the future we can look into Machine Learning models that combine both categorical and numerical factors and discover unforeseen trends when doing so. 
