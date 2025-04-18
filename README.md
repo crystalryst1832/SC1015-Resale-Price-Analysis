@@ -85,40 +85,40 @@ Both - Data Cleaning, Classification.
 - Grid Search Cross-Validation (GridSearch)
 
 # Insights
-### "Larger floor areas are the most demanded" -- Not Always
+### 1️⃣ "Larger floor areas are the most demanded" -- Not Always
 <p align= 'center'>
    <img src="FloorAreaVsResalePrice.jpg" width='400'>
 
    It suggests high supply =/ highest price. The volume of HDB is demand-driven, rather than value-per-unit-size. Even though larger flats are rare, they command higher average prices -- possibly due to exclusive flat types. 
 </p>
 
-### "Older flats (40+ years old) are assumed to be less desirable and cheaper." -- False  
+###  2️⃣ "Older flats (40+ years old) are assumed to be less desirable and cheaper." -- False  
 <p align= 'center'>
    <img src="RemainingLeaseVersusResalePrice.jpg" width='400'>
 
    The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1. Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices. There are other more domineering factors in play.
 </p>
 
-### Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices. -- True
+### 3️⃣ Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices. -- True
 <p align= 'center'>
    <img src="FlatModelVsPrice.jpg" width='400'>
 </p>
 
-### Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
+### 4️⃣ Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
 <p align= 'center'>
    <img src="RoomVsDemand.jpg" width='400'> 
    
    This chart compares HDB resale prices and transaction counts across flat types, showing both price distribution (boxplots) and volume (bar heights). The picture shows 4-room flats dominate in demand popularity.
 </p>
 
-### Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
+### 5️⃣ Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
 <p align= 'center'>
    <img src="StoreyvsPrice.jpg" width='400'>
    
    There are constant outliers for the lower storey ranges, and they fetch high resale prices.
 </p>
 
-### The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility. -- Not Always
+### 6️⃣ The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility. -- Not Always
 <p align= 'center'>
    <img src="DistanceMRTvsPrice.jpg" width='400'>
    
