@@ -67,7 +67,7 @@ Are the claims according to public perception about HDB really true?
 # Contributors
 Both - Data Cleaning, Classification.  
 @ crystalryst, Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
-@ junxiang, Chua Jun Xiang - EDA Categoricals, CLustering, Canva Slides
+@ junxiang, Chua Jun Xiang - EDA Categoricals, Clustering, Canva Slides
 
 # Algorithms / Libraries / Tools
 - Pandas 
@@ -115,7 +115,7 @@ Both - Data Cleaning, Classification.
 <p align= 'center'>
    <img src="StoreyvsPrice.jpg" width='400'>
    
-   There are constant outliers for the lower storey ranges, and they fetch high resale prices.
+   There are constant outliers for the lower storey ranges, and these outlieres still fetch high resale prices.
 </p>
 
 ### 6️⃣ The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility. -- Not Always
@@ -125,7 +125,7 @@ Both - Data Cleaning, Classification.
    The picture above shows resale prices relating to their distances to MRT stations, with blue dots representing listings, highlighting spatial proximity and pricing. Here, a house of 190 metres away gives a lower price of 630 000 than a house of 700 metres away which is valued at 750 000, demonstrating not all houses are more expensive when they are nearer to the MRT, contradicting popular belief.
 </p>
 
-# What is something new that we learn?
+# What is something new that we learnt?
 - The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
 - Geolocation
 - API Usage, to fetch coordinates of full addresses of a large database containing thousands of addresses
