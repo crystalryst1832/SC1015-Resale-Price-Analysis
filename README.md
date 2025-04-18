@@ -65,8 +65,9 @@ Are the claims according to public perception about HDB really true?
 
 
 # Contributors
-@ crystalryst, Sie Khai Hinn Crystaline - Data Cleaning, EDA Numericals, Geolocation, Regression, Classification.  
-@ junxiang, Chua Jun Xiang - Data Cleaning, EDA Categoricals, CLustering, Canva Slides
+Both - Data Cleaning, Classification. 
+@ crystalryst, Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
+@ junxiang, Chua Jun Xiang - EDA Categoricals, CLustering, Canva Slides
 
 # Algorithms / Libraries / Tools
 - Pandas 
@@ -87,37 +88,40 @@ Are the claims according to public perception about HDB really true?
 ### "Larger floor areas are the most demanded" -- Not Always
 <p align= 'center'>
    <img src="FloorAreaVsResalePrice.jpg" width='400'>
-</p>
 It suggests high supply =/ highest price. 
 The volume of HDB is demand-driven, rather than value-per-unit-size. 
 Even though larger flats are rare, they command higher average prices -- possibly due to exclusive flat types. 
+</p>
 
 ### "Older flats (40+ years old) are assumed to be less desirable and cheaper." -- False  
 <p align= 'center'>
    <img src="RemainingLeaseVersusResalePrice.jpg" width='400'>
-</p>
 The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1. 
 Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices.
 There are other more domineering factors in play.
+</p>
 
 ### Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices. -- True
 <p align= 'center'>
    <img src="FlatModelVsPrice.jpg" width='400'>
 </p>
+
 ### Larger flat types (5-room) are expected to have higher prices, because they offer more space. -- True but Demand is not the highest
 atach image
+
+
 
 ### Higher floors (19 to 21, 22 to 24) are believed to have higher prices, due to better views, privacy, less noise compared to lower floors. -- Not ALways
 <p align= 'center'>
    <img src="StoreyvsPrice.jpg" width='400'>
-</p>
 There are constant outliers for the lower storey ranges, and they fetch high resale prices.
+</p>
 
 ### The nearer the distance to the nearest MRT, the higher the resale price, due to greater accessibility. -- Not Always
 <p align= 'center'>
    <img src="DistanceMRTvsPrice.jpg" width='400'>
-</p>
 The picture above shows resale prices relating to their distances to MRT stations, with blue dots representing listings, highlighting spatial proximity and pricing. Here, a house of 190 metres away gives a lower price of 630 000 than a house of 700 metres away which is valued at 750 000, demonstrating not all houses are more expensive when they are nearer to the MRT, contradicting popular belief.
+</p>
 
 # What is something new that we learn?
 - The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
