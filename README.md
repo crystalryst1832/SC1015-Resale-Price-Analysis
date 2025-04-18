@@ -125,14 +125,15 @@ Are the claims according to public perception about HDB really true?
 ### 1️⃣ K Nearest Neighbour out-performs Multi-Variate Linear Regression, and will be better at predicting resale prices.
 MultiVariate Regression  
 <p align= 'center'>
-   <img src="Pictures/Multi-VariateRegression" width='400'>
-
-   KNN
-   <img src="Pictures/KNN" width='400'>
-
-   SVR
-   <img src="Pictures/SVR" width='400'>
-
+   <img src="Pictures/Multi-VariateRegression.png" width='400'>
+</p>
+KNN
+<p align= 'center'>
+   <img src="Pictures/KNN.png" width='400'>
+</p>
+SVR
+<p align= 'center'>
+   <img src="Pictures/SVR.png" width='400'>
 </p>
 
 ### 2️⃣ Xg Boost performs similarly to CatBoost, in terms of classification accuracy, and will be better at predicting resale prices.
