@@ -137,12 +137,13 @@ SVR
 </p>
 
 ### 2️⃣ Xg Boost performs similarly to CatBoost, in terms of classification accuracy, and will be better at predicting resale prices.
+Cat Boost Classifier
 <p align= 'center'>
-   CatBoost
-   <img src="Pictures/Catboost" width='400'>
-
-   CatBoost and XG Boost
-   <img src="Pictures/XGboostandcatboost" width='400'>
+   <img src="Pictures/Catboost.png" width='400'>
+</p>
+Comparing between CatBoost and XG Boost
+<p align= 'center'>
+   <img src="Pictures/XGboostandcatboost.png" width='400'>
 </p>
 
 # What is something new that we learnt?
