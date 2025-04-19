@@ -233,7 +233,7 @@ Our goal is to build models that are not just accurate, but also interpretable, 
 # Contributors
 Both - Data Cleaning, Classification.  
 @ Sie Khai Hinn Crystaline - EDA Numericals, Geolocation, Regression.  
-@ Chua Jun Xiang - EDA Categoricals, Clustering, Canva Slides
+@ Chua Jun Xiang - EDA Categoricals, Clustering, [Canva Slides](https://www.canva.com/design/DAGk9kU3aJw/-XB5A4hStVuo7WWLa9S-Pg/edit?utm_content=DAGk9kU3aJw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 # References
 - https://www.researchgate.net/figure/Flow-chart-of-CatBoost-algorithm_fig1_368319203
