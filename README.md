@@ -145,8 +145,7 @@ Next, we combined the three numerical features into a multi-variate linear regre
 
 **Non-linear Regression using K-Nearest Neighbors (KNN)**  
 
-This is something new we learnt:   
-KNN  
+This is something new we learnt:     
 <p align= 'center'>
    <img src="Pictures/KNN.png" width='400'>
 </p>
@@ -160,6 +159,7 @@ KNN significantly outperformed the previous models with an R² score of 86%, cap
 
 **Support Vector Regression (SVR)**  
 
+This is something new we learnt:  
 Building on earlier models, we applied SVR and it achieved an R² score of ~0.60 on both training and test sets, indicating good generalization but moderate predictive power, especially compared to KNN’s 0.86 R².  
 <p align= 'center'>
    <img src="Pictures/SVR.png" width='400'>
@@ -179,6 +179,8 @@ While SVR improves on linear regression (48% R²), it lags behind KNN’s abilit
 We realized that buyers and sellers often think in price ranges rather than exact amounts. Thus, we developed a classification model to predict which price bin a flat belongs to. This shift aligned with real-world decision-making and introduced a fresh dimension to our analysis.  
 
 **Cat Boost Classifier**
+
+This is something new we learnt:  
 <p align= 'center'>
    <img src="Pictures/Catboost.png" width='400'>
 </p>
@@ -192,7 +194,9 @@ We found that:
    8 bins offered more granularity but reduced model performance  
    5 bins struck a balance between interpretability and precision  
 
-**Introducing XGBoost for Comparison**
+**Introducing XGBoost for Comparison**  
+
+This is something new we learnt:  
 <p align= 'center'>
    <img src="Pictures/XGboostandcatboost.png" width='400'>
 </p>
@@ -203,8 +207,10 @@ Both CatBoost and XGBoost consistently delivered accuracies 3x higher than rando
 - The importance of Data Cleaning and how it impacts Accuracy and Correlation between factors
 - Geolocation, Geopandas
 - API Usage, to fetch coordinates of full addresses of a large database containing thousands of addresses
-- Regression
+- K-Nearest Neighbour (KNN) Regression
+- Support Vector Regression (SVR)
 - Cat Boost Classifier
+- XG Boost 
 - Function formatting
 - Annotation Clustering
 - One Hot Encoding
@@ -237,3 +243,4 @@ Both - Data Cleaning, Classification.
 - https://medium.com/analytics-vidhya/singapore-housing-prices-ml-prediction-analyse-singapores-property-price-part-iii-bd9438077423
 - https://www.rateinflation.com/consumer-price-index/singapore-historical-cpi/
 - https://www.straitstimes.com/singapore/more-than-half-of-singaporeans-may-delay-plans-to-buy-home-due-to-inflation-fears-study
+- https://www.propertyreview.sg/should-you-be-concerned-hdb-about-lease-decay-in-2025/
