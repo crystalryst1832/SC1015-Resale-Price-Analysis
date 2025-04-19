@@ -92,7 +92,13 @@ Are the claims according to public perception about HDB really true?
 <p align= 'center'>
    <img src="Pictures/RemainingLeaseVersusResalePrice.jpg" width='400'>
 
-   The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1. Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices. There are other more domineering factors in play.
+   The linear regression between the remaining_lease in terms of months and resale price has a poor predictive power, R^2 is 0.1, suggesting lease decay alone does not drive resale prices. Contrary to public perception, the age of flats, or in other words the remaining lease, weakly affects the resale prices. Lease decay **does affect** resale prices to some extent—but **not as strongly as many people assume**. Here are some possible reasons:  
+
+**1. Market Sentiment Remains Resilient**  
+Despite concerns, data shows that **resale prices of older HDB flats are not crashing**. In fact, the number of million-dollar resale flats—including older ones—is rising. This indicates that **other factors like size, location, and scarcity of large units matter more** to buyers.
+
+**2. Government Support Helps Mitigate Concerns**  
+Policies like the **[Voluntary En-bloc Redevelopment Scheme (VERS)](https://www.propertyreview.sg/should-you-be-concerned-hdb-about-lease-decay-in-2025/)** and ongoing discussions about **lease buyback and upgrading** offer homeowners **greater security** and keep confidence in the resale market relatively stable.
 </p>
 
 ### 3️⃣ "Premium flat models (eg: Premium Apartment, DBSS, Improved) tend to fetch higher prices." -- True
