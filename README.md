@@ -1,4 +1,4 @@
-# SC1015: Resale Price Analysis
+# SC1015: Resale Price Analysis, Predicting Prices Beyond Popular Belief
 Our team's objective is to analyse the factors that affect resale prices of HDB flats in Singapore, from 2017 to 2024's first month. For detailed walkthrough, please view code in order from:
 1. Data Cleaning
 2. Exploratory Data Analysis (EDA) which are further split into:
@@ -139,7 +139,7 @@ These results suggested that no single feature could sufficiently explain resale
 
 **Multi-variate Linear Regression**
 <p align= 'center'>
-   <img src="Pictures/Multi-VariateRegression.png" width='400'>
+   <img src="Pictures/Multi-Variate Regression.png" width='400'>
 </p>
 Next, we combined the three numerical features into a multi-variate linear regression model, which improved predictive accuracy to 48%. This revealed a key insight: resale prices are influenced by a combination of factors, **not isolated attributes**. However, the linear model was still limited in capturing non-linear relationships.  
 
